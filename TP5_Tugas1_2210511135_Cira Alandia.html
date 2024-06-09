@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<!-- Praktikum Pemrograman Web -->
+<!-- Cira Alandia -->
+<!-- 221051135 // Kelas D -->
+
+<!-- "Head" adalah bagian header -->   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul tab saat di website -->
+    <title>TP5_No1_Hitung_135_Cira</title>
+
+    <!-- Menghubungkan file CSS untuk styling -->
+    <link rel="stylesheet" href="TP5_No1_style.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <!-- Ini adalah bagian judul -->
+            <h1>Perhitungan Nilai</h1> 
+        </div>
+
+        <!-- Ini adalah bagian PERHITUNGAN -->
+        <div class="form">
+            <div class="input">
+                 <!-- Label untuk input nilai -->
+                <label for="nilai">Nilai Anda :</label>
+                <!-- Input untuk memasukkan nilai -->
+                <input type="number" id="nilai" name="nilai" placeholder="Masukkan nilai Anda">
+                <!-- Tombol untuk memanggil fungsi hitungNilai() saat diklik --> 
+                <button type="button" onclick="hitungNilai()">Hitung</button> 
+            </div>
+
+            <!-- Ini adalah bagian HASIL -->
+            <div id="hasil">
+                <!-- Judul hasil perhitungan -->
+                <h3>Hasil Perhitungan Nilai</h3> 
+                <!-- Menampilkan nilai yang dimasukkan oleh pengguna -->
+                <p>Nilai Anda : <span id="nilai-angka"></span></p> 
+                <!-- Menampilkan predikat berdasarkan nilai yang dihitung -->
+                <p>Predikat : <span id="predikat"></span></p> 
+            </div>
+        </div>
+
+    
+    </div>
+    <!-- Menghubungkan file JavaScript untuk melakukan perhitungan -->
+    <script src="TP5_No1_script.js"></script> 
+</body>
+
+</html>
